@@ -1,0 +1,8 @@
+@use '../abstracts/root';
+@use '../abstracts/mixins';
+
+body {
+  // @include mixins.display-desktop;
+  font-family: root.$font-stack;
+ 
+} 

@@ -1,0 +1,22 @@
+@use '../abstracts/root';
+@use '../abstracts/mixins';
+
+nav{
+@include mixins.display-desktop;
+  padding: root.$padding-30;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+
+ img {
+  height: 68px
+ }
+ ul {
+  @include mixins.list-horizontal;
+  column-gap: root.$gap-19;
+  font-size: root.$md-font-size;
+  
+  
+ }
+}
+

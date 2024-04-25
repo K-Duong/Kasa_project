@@ -1,0 +1,11 @@
+@use '../abstracts/root';
+@use '../abstracts/mixins';
+
+footer{
+  background-color: root.$black-color;
+  color: root.$white-color;
+  @include mixins.flex-column;
+  justify-content: center;
+  align-items: center;
+  padding-top: root.$padding-30;
+} 
