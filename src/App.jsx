@@ -1,16 +1,7 @@
-// import {useState } from 'react'
-// import {createContext } from "react"
-import { Routes, Route} from 'react-router-dom' 
+import { RouterProvider } from 'react-router-dom' 
 
-import HomePage from './Pages/HomePage';
-import LocationPage from './Pages/LocationPage';
-import ErrorPage from './Pages/ErrorPage';
-import PresentationPage from './Pages/PresentationPage'; 
+import { router } from './Jsx/Routes/router'; 
 
-import Nav from './Components/Navbar';
-import Footer from './Components/Footer';
-
-import { json } from './Data/json' 
 import './App.css'
 
 //contraintes techniques
@@ -21,23 +12,10 @@ import './App.css'
 //2.Collapse : Par défaut, les Collapses sont fermés à l'initialisation de la page. 
 
 function App() {
-
-    // console.log(json);
-
   return (
     <>
-      <Nav/>
-      {/* replace router and path */}
-      <Routes>
-        <Route path="/" element={<HomePage data={json}/>} />
-        <Route path="/location" element={<LocationPage/>} />
-        <Route path="/presentation" element={<PresentationPage/>} />
-        <Route path="/error" element={<ErrorPage/>} />
-      </Routes>
-      <Footer/>
-      
+      <RouterProvider router={router}/>
     </>
   )
 }
-
 export default App

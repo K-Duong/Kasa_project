@@ -1,12 +1,10 @@
 @use '../abstracts/root';
 @use '../abstracts/mixins';
 
-.content{
+.home-content{
    @include mixins.flex-column;
    @include mixins.display-desktop;
   row-gap: root.$gap-50;
- 
-
 }
 
 .banner{

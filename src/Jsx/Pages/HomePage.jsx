@@ -1,5 +1,5 @@
 // import { json } from './Data/json';
-import Card from '../../Components/CardLocation'
+import Card from '../Components/CardLocation'
 import cover from '../../assets/photo-source.jpeg'
 
 //banner
@@ -14,8 +14,6 @@ function Banner(){
     </div>
   )
 }
-
-
 //cards locations
 
 function HomePage({data}) {
@@ -24,7 +22,7 @@ function HomePage({data}) {
     console.log("click", location.id)
   }
   return (
-    <div className="content">
+    <div className="home-content">
       <Banner/>
       <div className='cards-content'>
         {data.map(location => { 

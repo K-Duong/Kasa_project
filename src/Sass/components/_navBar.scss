@@ -12,12 +12,10 @@ nav{
  img {
   height: 68px
  }
- ul {
+ .nav-link {
   @include mixins.list-horizontal;
   column-gap: root.$gap-19;
   font-size: root.$md-font-size;
-  
-  
  }
 }
 

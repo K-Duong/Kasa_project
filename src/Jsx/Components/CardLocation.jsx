@@ -1,6 +1,5 @@
 
 function Card ({location, handleClick}){
-  // console.log(data[0].title)
 
  return (
   <>

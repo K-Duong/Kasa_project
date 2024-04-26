@@ -8,16 +8,12 @@
   width: root.$card-desktop;
   height: root.$card-desktop;
   cursor: pointer;
- 
 
   img{
     @include mixins.cover-img;
     width: 100%;
     height: root.$card-desktop;
     border-radius: root.$radius-10;
-
-
-
   }
   
   p{
@@ -27,7 +23,6 @@
     font-weight: root.$bold-title;
     background-color: root.$primary-color;
     padding: root.$padding-15;
-
   }
 
 
