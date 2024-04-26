@@ -3,9 +3,11 @@ $font-stack: 'Montserrat', sans-serif;
 $primary-color: #FF6060;
 $white-color: #FFFFFF;
 $black-color: #000000;
+$bg-color: #F6F6F6;
 
 //font size
-$sm-font-size: 12px;
+$x-sm-font-size: 12px;
+$sm-font-size: 18px;
 $md-font-size: 24px;
 $l-font-size: 36px;
 $xl-font-size: 48px;
@@ -16,7 +18,7 @@ $md-text: 400;
 $light-text: 300;
 
 //breakpoints
-$media-desktop: 1440px;
+$media-desktop: 1240px;
 $media-mobile : 375px;
 
 //gap
@@ -31,11 +33,21 @@ $gap-19: 19px;
 $padding-15: 15px;
 $padding-20: 20px;
 $padding-30: 30px;
+$padding-35: 35px;
+$padding-50: 50px;
 
 
 //margin 
 $margin-auto: auto;
 
 //radius
+$radius-10: 10px;
 $radius-25: 25px;
 $radius-50: 50px;
+
+//width
+$card-desktop: 340px;
+$width-card-mobile: 335px;
+$height-card-mobile: 255px;
+
+

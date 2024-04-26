@@ -8,6 +8,11 @@
 @mixin flex-row{
   display: flex;
 }
+
+@mixin flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
 @mixin list-horizontal{
   @include flex-row;
   list-style-type: none;
@@ -17,9 +22,6 @@
 
 //media-query
 @mixin display-desktop{
-  @include flex-row();
-  // justify-content: center;
-  // align-items: center;
   max-width: root.$media-desktop;
   margin: root.$margin-auto
   
@@ -32,3 +34,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin bottom-left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // transform: translate(-50%, -50%);
+}
+
+@mixin cover-img{
+  object-fit: cover ;
+}
+

@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
   padding: 30px;
   justify-content: space-between;
@@ -19,6 +19,8 @@ nav ul {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -31,12 +33,17 @@ footer {
   align-items: center;
   padding-top: 30px;
 }
+footer img {
+  filter: brightness(10) saturate(0%);
+  width: 124px;
+}
 
 .content {
   display: flex;
-  max-width: 1440px;
+  flex-direction: column;
+  max-width: 1240px;
   margin: auto;
-  height: 100vh;
+  row-gap: 50px;
 }
 
 .banner {
@@ -62,6 +69,40 @@ footer {
   transform: translate(-50%, -50%);
   font-weight: 700;
   color: #FFFFFF;
+}
+
+.cards-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  align-items: center;
+  padding: 35px;
+  gap: 35px;
+  justify-content: center;
+}
+
+.card-location {
+  position: relative;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  cursor: pointer;
+}
+.card-location img {
+  object-fit: cover;
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+}
+.card-location p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #FF6060;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=App.css.map */

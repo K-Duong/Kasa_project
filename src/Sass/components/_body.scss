@@ -2,7 +2,7 @@
 @use '../abstracts/mixins';
 
 body {
-  // @include mixins.display-desktop;
+  @include mixins.flex-column;
   font-family: root.$font-stack;
  
 } 

@@ -8,4 +8,9 @@ footer{
   justify-content: center;
   align-items: center;
   padding-top: root.$padding-30;
+  
+  img{
+    filter: brightness(10) saturate(0%);
+    width: 124px;
+  }
 } 

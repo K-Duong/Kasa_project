@@ -1,4 +1,5 @@
 // import { json } from './Data/json';
+import Card from '../Components/CardLocation'
 import cover from '../assets/photo-source.jpeg'
 
 //banner
@@ -18,11 +19,19 @@ function Banner(){
 //cards locations
 
 function HomePage({data}) {
-  console.log(data)
+  console.log(data);
+  function handleClick(location){
+    console.log("click", location.id)
+  }
   return (
     <div className="content">
       <Banner/>
-    
+      <div className='cards-content'>
+        {data.map(location => { 
+          // console.log(location);
+          return <Card key={location.id} location={location} handleClick={() => handleClick(location)}/> 
+          })}   
+      </div>
     </div>
   )
 }

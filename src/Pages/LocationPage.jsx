@@ -1,6 +1,6 @@
 function LocationPage() {
   return (
-    <div className="content">
+    <div className="location-content">
       Page de location
     </div>
   )

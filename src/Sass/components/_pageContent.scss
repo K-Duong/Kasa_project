@@ -2,8 +2,11 @@
 @use '../abstracts/mixins';
 
 .content{
+   @include mixins.flex-column;
    @include mixins.display-desktop;
-   height: 100vh;
+  row-gap: root.$gap-50;
+ 
+
 }
 
 .banner{
@@ -28,7 +31,16 @@
     @include mixins.center-item;
     font-weight: root.$bold-title;
     color: root.$white-color;
- 
+   }
+}
 
-  }
+.cards-content{
+  @include mixins.flex-wrap;
+  background-color: root.$bg-color;
+  align-items: center;
+  padding: root.$padding-35;
+  gap: root.$padding-35;
+  justify-content: center;
+
+
 }

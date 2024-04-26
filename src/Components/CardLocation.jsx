@@ -1,11 +1,13 @@
-import { json } from './Data/json';
 
+function Card ({location, handleClick}){
+  // console.log(data[0].title)
 
-function Card (){
- console.log(json);
  return (
   <>
-    
+    <div className="card-location" onClick={handleClick}>
+      <img src={location.cover} alt={location.title}/>
+      <p>{location.title}</p>
+    </div>
   </>
  )
 }

@@ -2,6 +2,7 @@
 @use '../abstracts/mixins';
 
 nav{
+@include mixins.flex-row;
 @include mixins.display-desktop;
   padding: root.$padding-30;
  justify-content: space-between;

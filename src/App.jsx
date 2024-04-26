@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Nav/>
-      {/* replace Routes by pages content */}
+      {/* replace router and path */}
       <Routes>
         <Route path="/" element={<HomePage data={json}/>} />
         <Route path="/location" element={<LocationPage/>} />
