@@ -1,28 +1,27 @@
-@use '../../Sass/abstracts/root';
-@use '../../Sass/abstracts/mixins';
+@use '../../Sass/abstracts' as *;
 
 
 .card-location{
   position: relative;
-  border-radius: root.$radius-10;
-  width: root.$card-desktop;
-  height: root.$card-desktop;
+  border-radius: $radius-10;
+  width: $card-desktop;
+  height: $card-desktop;
   cursor: pointer;
 
   img{
-    @include mixins.cover-img;
+    @include cover-img;
     width: 100%;
-    height: root.$card-desktop;
-    border-radius: root.$radius-10;
+    height: $card-desktop;
+    border-radius: $radius-10;
   }
   
   p{
-    @include mixins.bottom-left;
-    font-size: root.$sm-font-size;
-    color: root.$white-color;
-    font-weight: root.$bold-title;
-    background-color: root.$primary-color;
-    padding: root.$padding-15;
+    @include bottom-left;
+    font-size: $sm-font-size;
+    color: $white-color;
+    font-weight: $bold-title;
+    background-color: $primary-color;
+    padding: $padding-15;
   }
 
 

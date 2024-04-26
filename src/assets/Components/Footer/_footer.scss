@@ -1,13 +1,12 @@
-@use '../../Sass/abstracts/root';
-@use '../../Sass/abstracts/mixins';
+@use '../../Sass/abstracts' as *;
 
 footer{
-  background-color: root.$black-color;
-  color: root.$white-color;
-  @include mixins.flex-column;
+  background-color: $black-color;
+  color: $white-color;
+  @include flex-column;
   justify-content: center;
   align-items: center;
-  padding-top: root.$padding-30;
+  padding-top: $padding-30;
   
   img{
     filter: brightness(10) saturate(0%);

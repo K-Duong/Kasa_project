@@ -1,4 +1,10 @@
-@use 'root'; 
+// @use "breakpoints";
+// @use "colors";
+// @use "font";
+// @use "radius";
+// @use "spaces";
+// @use"width";
+@use "root";
 
 @mixin flex-column{
   display: flex;

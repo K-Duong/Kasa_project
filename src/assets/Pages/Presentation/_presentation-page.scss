@@ -1,14 +1,13 @@
-@use '../../Sass/abstracts/root';
-@use '../../Sass/abstracts/mixins';
+@use '../../Sass/abstracts' as *;
 
 .banner{
-  @include mixins.flex-column;
+  @include flex-column;
   width: 100%;
   height: 230px;
   position: relative;
   text-align: center;
   background-color: black;
-  border-radius: root.$radius-25;
+  border-radius: $radius-25;
   
   .img-banner{
     height: 230px;
@@ -19,18 +18,18 @@
   }
 
   h1{
-    @include mixins.center-item;
-    font-weight: root.$bold-title;
-    color: root.$white-color;
+    @include center-item;
+    font-weight: $bold-title;
+    color: $white-color;
    }
 }
 
 .cards-content{
-  @include mixins.flex-wrap;
-  background-color: root.$bg-color;
+  @include flex-wrap;
+  background-color: $bg-color;
   align-items: center;
-  padding: root.$padding-100 0;
-  gap: root.$padding-35;
+  padding: $padding-100 0;
+  gap: $padding-35;
   justify-content: center;
 
 }

@@ -1,10 +1,9 @@
-@use '../../Sass/abstracts/root';
-@use '../../Sass/abstracts/mixins';
+@use '../../Sass/abstracts' as *;
 
 nav{
-@include mixins.flex-row;
-@include mixins.display-desktop;
-  padding: root.$padding-30;
+@include flex-row;
+@include display-desktop;
+  padding: $padding-30;
  justify-content: space-between;
  align-items: center;
  width: 100%;
@@ -13,9 +12,9 @@ nav{
   height: 68px
  }
  .nav-link {
-  @include mixins.list-horizontal;
-  column-gap: root.$gap-19;
-  font-size: root.$md-font-size;
+  @include list-horizontal;
+  column-gap: $gap-19;
+  font-size: $md-font-size;
   text-decoration: none;
 
   &:visited{

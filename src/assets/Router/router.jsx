@@ -1,5 +1,7 @@
 import { createBrowserRouter, Outlet} from 'react-router-dom';
 
+import "./_container.scss";
+
 import HomePage from '../Pages/Home';
 import LocationPage from '../Pages/Location';
 import ErrorPage from '../Pages/Error';
@@ -26,13 +28,8 @@ export const router = createBrowserRouter([
         element: <PresentationPage/>
       },
       {
-        path: 'location',
-        // element: <LocationPage/>,
-        ///create router for each page with id
-        children: [{
-          path:":id",
-          element: <LocationPage/>
-        }]
+        path: 'location/:id',
+        element: <LocationPage/>,
       }
     ]
   },
@@ -43,6 +40,7 @@ function Root() {
   return (<>
     <Nav/>
     <div className='container'>
+      
       <Outlet/>
     </div>
     <Footer/>
