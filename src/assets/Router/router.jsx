@@ -1,23 +1,25 @@
 import { createBrowserRouter, Outlet} from 'react-router-dom';
 
-import HomePage from '../Pages/HomePage';
-import LocationPage from '../Pages/LocationPage';
-// import ErrorPage from './Jsx/Pages/ErrorPage';
-import PresentationPage from '../Pages/PresentationPage'; 
+import HomePage from '../Pages/Home';
+import LocationPage from '../Pages/Location';
+import ErrorPage from '../Pages/Error';
+import PresentationPage from '../Pages/Presentation'; 
 
 import Nav from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
-import { json } from '../../Data/json';
+
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <Root/>,
+    errorElement: <ErrorPage/>,
+
     children: [
       {
         path: "",
-        element: <HomePage data={json}/>
+        element: <HomePage/>
       },
       {
         path: 'presentation',
@@ -25,7 +27,12 @@ export const router = createBrowserRouter([
       },
       {
         path: 'location',
-        element: <LocationPage/>
+        // element: <LocationPage/>,
+        ///create router for each page with id
+        children: [{
+          path:":id",
+          element: <LocationPage/>
+        }]
       }
     ]
   },

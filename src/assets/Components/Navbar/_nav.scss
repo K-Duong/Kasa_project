@@ -1,5 +1,5 @@
-@use '../abstracts/root';
-@use '../abstracts/mixins';
+@use '../../Sass/abstracts/root';
+@use '../../Sass/abstracts/mixins';
 
 nav{
 @include mixins.flex-row;
@@ -16,6 +16,11 @@ nav{
   @include mixins.list-horizontal;
   column-gap: root.$gap-19;
   font-size: root.$md-font-size;
+  text-decoration: none;
+
+  &:visited{
+    text-decoration: none;
+  }
  }
 }
 

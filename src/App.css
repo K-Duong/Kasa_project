@@ -16,12 +16,34 @@ nav .nav-link {
   padding: 15px;
   column-gap: 19px;
   font-size: 24px;
+  text-decoration: none;
+}
+nav .nav-link:visited {
+  text-decoration: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+.card-location {
+  position: relative;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  cursor: pointer;
+}
+.card-location img {
+  object-fit: cover;
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+}
+.card-location p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #FF6060;
+  padding: 15px;
 }
 
 footer {
@@ -38,12 +60,18 @@ footer img {
   width: 124px;
 }
 
-.home-content {
+.error-content {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
-  margin: auto;
-  row-gap: 50px;
+}
+.error-content .error-status {
+  font-size: 288px;
+  font-weight: 700;
+  color: #FF6060;
+}
+.error-content p {
+  font-size: 36px;
+  color: #FF6060;
 }
 
 .banner {
@@ -76,33 +104,59 @@ footer img {
   flex-wrap: wrap;
   background-color: #F6F6F6;
   align-items: center;
-  padding: 35px;
+  padding: 100px 0;
   gap: 35px;
   justify-content: center;
 }
 
-.card-location {
-  position: relative;
-  border-radius: 10px;
-  width: 340px;
-  height: 340px;
-  cursor: pointer;
-}
-.card-location img {
-  object-fit: cover;
+.banner {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 340px;
-  border-radius: 10px;
+  height: 230px;
+  position: relative;
+  text-align: center;
+  background-color: black;
+  border-radius: 25px;
 }
-.card-location p {
+.banner .img-banner {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 35%;
+}
+.banner h1 {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 18px;
-  color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: 700;
-  background-color: #FF6060;
-  padding: 15px;
+  color: #FFFFFF;
+}
+
+.cards-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  align-items: center;
+  padding: 100px 0;
+  gap: 35px;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=App.css.map */

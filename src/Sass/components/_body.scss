@@ -1,7 +1,0 @@
-@use '../abstracts/root';
-@use '../abstracts/mixins';
-
-body {
-  @include mixins.flex-column;
-  font-family: root.$font-stack;
-} 

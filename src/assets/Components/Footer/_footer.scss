@@ -1,5 +1,5 @@
-@use '../abstracts/root';
-@use '../abstracts/mixins';
+@use '../../Sass/abstracts/root';
+@use '../../Sass/abstracts/mixins';
 
 footer{
   background-color: root.$black-color;

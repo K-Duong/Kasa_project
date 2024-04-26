@@ -1,0 +1,13 @@
+@use '../Sass/abstracts/root';
+@use '../Sass/abstracts/mixins';
+
+body {
+  @include mixins.flex-column;
+  font-family: root.$font-stack;
+} 
+.container{
+  @include mixins.flex-column;
+  @include mixins.display-desktop;
+  justify-content: center;
+  align-items: center;
+}

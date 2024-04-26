@@ -1,6 +1,6 @@
 import { RouterProvider } from 'react-router-dom' 
 
-import { router } from './Jsx/Routes/router'; 
+import { router } from './assets/Router/router'; 
 
 import './App.css'
 
@@ -12,10 +12,6 @@ import './App.css'
 //2.Collapse : Par défaut, les Collapses sont fermés à l'initialisation de la page. 
 
 function App() {
-  return (
-    <>
-      <RouterProvider router={router}/>
-    </>
-  )
-}
+  return <RouterProvider router={router}/>
+  }
 export default App

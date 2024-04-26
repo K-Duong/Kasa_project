@@ -1,11 +1,5 @@
-@use '../abstracts/root';
-@use '../abstracts/mixins';
-
-.home-content{
-   @include mixins.flex-column;
-   @include mixins.display-desktop;
-  row-gap: root.$gap-50;
-}
+@use '../../Sass/abstracts/root';
+@use '../../Sass/abstracts/mixins';
 
 .banner{
   @include mixins.flex-column;
@@ -15,7 +9,6 @@
   text-align: center;
   background-color: black;
   border-radius: root.$radius-25;
-
   
   .img-banner{
     height: 230px;
@@ -36,9 +29,8 @@
   @include mixins.flex-wrap;
   background-color: root.$bg-color;
   align-items: center;
-  padding: root.$padding-35;
+  padding: root.$padding-100 0;
   gap: root.$padding-35;
   justify-content: center;
-
 
 }

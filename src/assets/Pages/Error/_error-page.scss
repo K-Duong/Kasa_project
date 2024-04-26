@@ -1,0 +1,19 @@
+@use '../../Sass/abstracts/root';
+@use '../../Sass/abstracts/mixins';
+
+.error-content{
+  @include mixins.flex-column;
+  
+  .error-status{
+    font-size: root.$error-status-desktop;
+    font-weight: root.$bold-title;
+    color: root.$primary-color;
+  }
+
+  p{
+    font-size: root.$l-font-size;
+    color: root.$primary-color;
+  }
+};
+
+
