@@ -1,8 +1,9 @@
-function Tag(){
+function Tag({tag}){
   return (
-    <div className="tag">
-      tag name
-    </div>
+  <>
+    <span className="tag">{tag}</span>
+  </>
+    
   )
 }
 

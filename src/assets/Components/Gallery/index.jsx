@@ -1,6 +1,8 @@
 import Button from "../Button"
 
 function Gallery({gallery}) {
+
+  console.log(gallery)
   return (
     <div>
       {/* button back */}

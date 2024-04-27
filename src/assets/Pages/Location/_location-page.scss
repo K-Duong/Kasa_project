@@ -1,0 +1,67 @@
+@use '../../Sass/abstracts' as *;
+
+.location-content{
+  @include flex-column;
+  width: 100%;
+
+  // @include display-desktop;
+
+  .location-body{
+    @include flex-column;
+    width: 100%;
+     
+    .location-header{
+    @include flex-row;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+
+    h1,h3{
+      color: $primary-color;
+    }
+
+    h2,h3{
+      font-size: $sm-font-size;
+      font-weight: $md-text;
+    }
+
+    h1{
+      font-size: $l-font-size;
+      font-weight: $md-text;
+    }
+    .location-host-info{
+      @include flex-row;
+      .host-profile{
+      border-radius: $radius-50;
+      width: 100px;
+      height: 100px;
+
+      img{
+        border-radius: $radius-50;
+        object-fit: cover;
+        height: 100px;
+      }
+    }
+    }
+    
+    
+  }
+    .tags-and-rating{
+      @include flex-row;
+      width: 100%;
+      justify-content: space-between;
+      
+      .tags-list{
+        @include flex-row;
+        column-gap: $gap-19;
+      }
+
+      .rating{
+        @include flex-row;
+
+      }
+    }
+ }
+
+ 
+}

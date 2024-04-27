@@ -1,0 +1,17 @@
+@use '../../Sass/abstracts' as *;
+
+.tag{
+  @include flex-row;
+  align-content: center;
+  justify-content: center;
+  border-radius: $radius-25;
+// text-align: center;
+  min-width: 115px;
+  height: 15px;
+  background-color: $primary-color;
+  color: $white-color;
+  font-size: $fs-14;
+  font-weight: $bold-title;
+  padding: 7px $padding-15;
+
+}
