@@ -16,12 +16,9 @@ function Banner(){
 }
 
 function HomePage() {
+  // json.map((data, index )=> console.log(index, data.pictures.length))
   console.log(json);
 
-  function handleClick(location){
-    console.log("click", location.id)
-  }
-  
   return (
     <div className="home-content">
       <Banner/>
@@ -30,7 +27,6 @@ function HomePage() {
           return <Card 
           key={location.id} 
           location={location} 
-          handleClick={() => handleClick(location)}
           /> 
           })}   
       </div>

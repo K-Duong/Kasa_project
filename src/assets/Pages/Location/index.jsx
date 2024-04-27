@@ -13,7 +13,7 @@ function LocationPage() {
   const newId = id.substring(1)
 
 const data = json.filter((location) => location.id === newId)[0];
-
+console.log("location's data:", data);
   return (
     <div className="location-content">
      <Gallery gallery={data.pictures}/>
