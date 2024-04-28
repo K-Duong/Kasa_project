@@ -6,40 +6,13 @@
   @include flex-row;
   text-align: center;
 
-  button {
-    background-color: transparent;
-    // opacity: 50%;
-    border: none;
-  
-    &.previous{
-    cursor:pointer;
-    margin-right:-80px;
-    z-index: 1;
-
-    
-  }
-    &.next{
-    cursor:pointer;
-    margin-left:-80px;
-    z-index: 1;
-  }
-
-  img{
-      opacity: 50%;
-      &:hover{
-        opacity: 100%;
-      }
-    }
-  }
-
   .picture-location{
     img{
       height: $height-picture-desktop;
       width: $width-picture-desktop;
       object-fit: cover;
-
+  
     }
   }
-
 
 }

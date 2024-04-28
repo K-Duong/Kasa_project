@@ -1,16 +1,11 @@
 import { useState } from "react";
 import Button from "../Button";
-import btnPrev from '../../Image/vector-left.png'
+import btnPrev from '../../Image/vector-left.png';
 import btnNext from '../../Image/vector-right.png'
-
-///1.Gallery composant: 
-///-naviguer vers image précédente et suivante, 
-///-pas de bouton pour naviguer si 1 photo
-///-La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.
 
 function Gallery({gallery}) {
   const [id, setId] = useState(0);
-  console.log(gallery)
+  // console.log(gallery)
 
   function Picture({src}){
     return (
@@ -41,13 +36,13 @@ function Gallery({gallery}) {
     return (
       <>
       {/* button back */}
-      <Button type={'previous'} handleClick={()=>handlePreviousPicture(gallery)}> 
-        <img src={btnPrev} alt={"précédent"}/>
+      <Button type={'btn-gallery btn-gallery-prev'} handleClick={()=>handlePreviousPicture(gallery)}> 
+        <img  src={btnPrev} alt={"précédent"}/>
       </Button>
         <Picture src={gallery[id]}/>
       {/* button next */}
-      <Button type={'next'}handleClick={()=>handleNextPicture(gallery)}> 
-      <img src={btnNext} alt={"précédent"}/>
+      <Button type={'btn-gallery btn-gallery-next'}handleClick={()=>handleNextPicture(gallery)}> 
+      <img  src={btnNext} alt={"suivant"}/>
       </Button>
     </>
     )

@@ -7,7 +7,6 @@ function Nav(){
       <img src={logo} alt="logo"/>
       <ul className='nav-link'>
         <NavLink to='/'>Accueil</NavLink>
-        <NavLink to='/location'>Location</NavLink>
         <NavLink  to='/presentation'>A propos</NavLink>
       </ul>
     </nav>

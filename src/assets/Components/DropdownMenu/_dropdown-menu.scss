@@ -1,1 +1,67 @@
 @use '../../Sass/abstracts' as *;
+.dropdown {
+
+  &-location{
+    width: 582px;
+  }
+
+  &-title{
+    @include flex-row;
+    justify-content: space-between;
+    background-color: $primary-color;
+    color: $white-color;
+    font-weight: $bold-title;
+    padding: $padding-15 $padding-10;
+    border-radius: $radius-5;
+
+    &-location{
+      font-size: $sm-font-size;
+    };
+
+    &-presentation{
+      font-size: $md-font-size;
+    }
+
+
+  }
+  &-content{
+    background-color: $bg-color;
+    overflow: hidden;
+    height: auto;
+    // padding: $padding-10;
+    max-height: 500px; /* approximate max height */
+    box-sizing: border-box;
+    
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    
+    &-location{
+      ul {
+        padding-left: $padding-20;
+        li{
+         list-style-type: none;
+         line-height: 24px;
+       }
+      };
+
+      p {
+        padding-left: $padding-20;
+        line-height: 24px;
+      }
+    }
+
+    // &-presentation{
+
+    // }
+
+
+    // hide content
+    &.hide{
+      padding: 0;
+      max-height: 0;
+    }
+  }
+
+  
+}

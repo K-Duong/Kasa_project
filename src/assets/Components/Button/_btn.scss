@@ -1,0 +1,45 @@
+@use '../../Sass/abstracts' as *;
+
+button {
+  background-color: transparent;
+  // opacity: 50%;
+  border: none;
+
+  &.btn-gallery{
+
+    &-prev{
+      cursor:pointer;
+      margin-right:-80px;
+      z-index: 1;
+  }
+    &-next{
+    cursor:pointer;
+    margin-left:-80px;
+    z-index: 1;
+  }
+    img{
+      opacity: 50%;
+      &:hover{
+        opacity: 100%;
+      }
+    }
+  }
+
+  &.btn-dropdown{
+    cursor: pointer;
+    animation: rotate-vector-up 0.2s ease-in forwards;
+
+      //animation for opened content
+      &-opened{
+        img{
+                animation: rotate-vector-down 0.2s ease-in forwards;
+              }
+      }
+
+     
+
+  }
+
+
+}
+

@@ -49,7 +49,8 @@ console.log("location's data:", data);
       </div>
       <div className="location-details">
         {/* map dropdown with description and equipement */}
-        <Dropdown></Dropdown>
+        <Dropdown title={'Description'} content={data.description} style={"location"}/>
+        <Dropdown title={"Equipements"} content={data.equipments} style={"location"}/>
       </div>
      </div>
      
