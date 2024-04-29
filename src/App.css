@@ -1,29 +1,2 @@
-.card-location {
-  position: relative;
-  border-radius: 10px;
-  width: 340px;
-  height: 340px;
-  cursor: pointer;
-}
-.card-location img {
-  object-fit: cover;
-  width: 100%;
-  height: 340px;
-  border-radius: 10px;
-}
-.card-location p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 18px;
-  color: #FFFFFF;
-  font-weight: 700;
-  background-color: #FF6060;
-  padding: 15px;
-}
-
-h1 {
-  color: red;
-}
 
 /*# sourceMappingURL=App.css.map */

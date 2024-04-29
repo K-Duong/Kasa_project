@@ -25,7 +25,6 @@
 
   }
   &-content{
-    background-color: $bg-color;
     overflow: hidden;
     height: auto;
     // padding: $padding-10;
@@ -33,10 +32,12 @@
     box-sizing: border-box;
     
     transition-property: all;
-    transition-duration: .2s;
+    transition-duration: .4s;
     transition-timing-function: ease-in-out;
     
     &-location{
+      background-color: $bg-color;
+
       ul {
         padding-left: $padding-20;
         li{
@@ -51,14 +52,15 @@
       }
     }
 
-    // &-presentation{
-
-    // }
+    &-presentation{
+      background-color: transparent;
+      padding-left: $padding-20;
+    }
 
 
     // hide content
     &.hide{
-      padding: 0;
+      // padding: 0;
       max-height: 0;
     }
   }

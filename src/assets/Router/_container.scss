@@ -9,4 +9,9 @@ body {
   @include display-desktop;
   justify-content: center;
   align-items: center;
+
+  // margin : $padding-30 0;
+  margin-top: $padding-30;
+  margin-bottom: $padding-30;
+
 }
