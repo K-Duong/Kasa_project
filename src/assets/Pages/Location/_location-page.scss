@@ -6,8 +6,6 @@
   align-items: center;
   width: 100%;
 
-  // @include display-desktop;
-
   .location-body{
     @include flex-column;
     width: 100%;
@@ -34,20 +32,31 @@
     }
     .location-host-info{
       @include flex-row;
+      height: 100%;
+      align-items: center;
+      column-gap: $gap-19;
+      
+      .host-name-box{
+        text-align: right;
+        max-width: 80px;
+
+       .host-name{
+          word-spacing: 30px;
+          line-height: 30px;
+        }
+      }
       .host-profile{
       border-radius: $radius-50;
       width: 100px;
       height: 100px;
 
-      img{
-        border-radius: $radius-50;
-        object-fit: cover;
-        height: 100px;
+        img{
+          border-radius: $radius-50;
+          object-fit: cover;
+          height: 100px;
+        }
       }
     }
-    }
-    
-    
   }
   .tags-and-rating{
     @include flex-row;

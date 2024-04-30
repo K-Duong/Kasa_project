@@ -30,6 +30,7 @@ export const router = createBrowserRouter([
       {
         path: 'location/:id',
         element: <LocationPage/>,
+
       }
     ]
   },
@@ -40,7 +41,6 @@ function Root() {
   return (<>
     <Nav/>
     <div className='container'>
-      
       <Outlet/>
     </div>
     <Footer/>

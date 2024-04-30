@@ -3,16 +3,28 @@
 
 .error-content{
   @include flex-column;
-  
-  .error-status{
+  justify-content: center;
+  align-items: center;
+ 
+
+  span.error-status{
     font-size: $error-status-desktop;
     font-weight: $bold-title;
     color: $primary-color;
+    padding-bottom: 50px;
   }
 
-  p{
+  span.error-message{
     font-size: $l-font-size;
     color: $primary-color;
+    padding-bottom: 100px;
+  }
+
+  a{
+    font-size: $sm-font-size;
+    color: $black-color;
+    padding-bottom: 100px;
+
     
   }
 };

@@ -1,12 +1,10 @@
-import Card from '../../Components/CardLocation';
 import Banner from '../../Components/Banner';
-
+import Card from '../../Components/CardLocation';
 import cover from '../../Image/photo-source.jpeg';
 
 import { json } from '../../Data/json';
 
 function HomePage() {
-  // json.map((data, index )=> console.log(index, data.pictures.length))
   console.log(json);
 
   return (
