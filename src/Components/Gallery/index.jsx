@@ -15,20 +15,16 @@ function Gallery({gallery}) {
     )
   }
   function handlePreviousPicture(gallery){
-      //if id === 0
     if (id === 0) {
       setId(gallery.length-1);
     }else{
-      //if id !==0
       setId((prev) => prev-1);
     }
   }
   function handleNextPicture(gallery){
-      //if id === pictureList.lenght-1
     if (id === gallery.length-1){
       setId(0)
     }else{
-      //if id < pictureList.lenght-1
       setId((prev) => prev+1)
     }
   }
@@ -48,9 +44,7 @@ function Gallery({gallery}) {
     )
   }
   function SinglePicture(){
-    return (
-      <Picture src={gallery[id]}/>
-    )
+    return <Picture src={gallery[id]}/>
   }
 
   return (
