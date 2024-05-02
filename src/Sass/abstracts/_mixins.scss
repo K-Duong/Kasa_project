@@ -1,10 +1,7 @@
-// @use "breakpoints";
-// @use "colors";
-// @use "font";
-// @use "radius";
-// @use "spaces";
-// @use"width";
+
+@use "sass:map";
 @use "root";
+
 
 @mixin flex-column{
   display: flex;
@@ -29,8 +26,27 @@
 //media-query
 @mixin display-desktop{
   max-width: root.$media-desktop;
+  // max-width: root.$breakpoints.desktop;
   margin: root.$margin-auto
   
+}
+@mixin display-mobile{
+  max-width: root.$media-mobile;
+
+}
+
+// @mixin display-mq($key){
+//   $size: map.get($breakpoints,$key);
+
+//   max-width: $size;
+//   margin: root.$margin-auto;
+// };
+
+@mixin breakpoint($key) {
+  $size: map.get($breakpoints,$key);
+  @media screen and (max-width: $size) {
+    @content;
+  }
 }
 
 //positions
@@ -45,7 +61,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  // transform: translate(-50%, -50%);
 }
 
 @mixin cover-img{

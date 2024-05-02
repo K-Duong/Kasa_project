@@ -1,12 +1,20 @@
 @use '../../Sass/abstracts' as *;
 
 footer{
-  background-color: $black-color;
+   @include flex-column;
+   @media screen and (max-width: $media-desktop) {
+    padding-top: $padding-30;
+   }
+   @media screen and (max-width: $media-mobile) {
+    padding: $padding-50;
+   }
+
+   background-color: $black-color;
   color: $white-color;
-  @include flex-column;
+ 
   justify-content: center;
   align-items: center;
-  padding-top: $padding-30;
+  
   
   img{
     filter: brightness(10) saturate(0%);

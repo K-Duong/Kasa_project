@@ -10,12 +10,17 @@
     @include flex-column;
     width: 100%;
     padding: $padding-30 0;
+    row-gap: $padding-20;
      
     .location-header{
     @include flex-row;
     width: 100%;
     justify-content: space-between;
     align-content: space-between;
+
+    .location-title-city{
+      line-height: $padding-20;
+    }
 
     h1,h3{
       color: $primary-color;
@@ -76,6 +81,7 @@
   .location-details{
     @include flex-row;
     justify-content: space-between;
+    column-gap: $gap-19;
   }
  }
 

@@ -4,10 +4,15 @@
 
 .cards-content{
   @include flex-wrap;
-  background-color: $bg-color;
   align-items: center;
-  padding: $padding-100 0;
-  gap: $padding-35;
   justify-content: center;
+  
+  background-color: $bg-color;
+  
+  margin-top: $padding-50;
+  padding: $padding-50 0;
+  gap: $padding-35;
+  
+  border-radius: $radius-25;
 
 }

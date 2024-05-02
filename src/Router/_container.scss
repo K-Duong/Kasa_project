@@ -6,7 +6,14 @@ body {
 } 
 .container{
   @include flex-column;
-  @include display-desktop;
+  @media screen and (max-width: $media-desktop) {
+     @include display-desktop;
+  }
+
+  @media screen and (max-width: $media-mobile) {
+    @include display-mobile;
+ }
+ 
   justify-content: center;
   align-items: center;
   margin-top: $padding-30;

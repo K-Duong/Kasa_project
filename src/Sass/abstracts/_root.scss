@@ -22,8 +22,12 @@ $md-text: 500;
 $light-text: 300;
 
 //breakpoints
+$breakpoints: (
+  desktop: 1240px,
+  mobile: 375px,
+);
 $media-desktop: 1240px;
-$media-mobile : 375px;
+$media-mobile : 426px;
 
 //gap
 $gap-50: 50px;
