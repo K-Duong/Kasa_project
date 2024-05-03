@@ -1,18 +1,31 @@
 @use '../../Sass/abstracts' as *;
 
 nav{
-  @media screen and (max-width: $media-desktop) {
-     @include display-desktop; 
-     padding: $padding-30;
-     img {
-      height: 68px
-    }
-    .nav-link {
-      column-gap: $gap-19;
-      font-size: $md-font-size;
-    }
-  }
+  @include flex-row;
+  @include display-desktop;
+  justify-content: space-between;
+  align-items: center;
+ 
+ .nav-link {
+    @include list-horizontal;
+    column-gap: $gap-19;
+    font-size: $md-font-size;
 
+    a{
+      &:link{
+        text-decoration: none;
+        color: $black-color;
+      }
+
+      &:hover{
+        text-decoration: underline;
+      }
+      
+      &:visited{
+        color: $black-color;
+      }
+    }
+} 
   @media screen and (max-width: $media-mobile) {
     @include display-mobile;
     padding: $padding-15;
@@ -24,45 +37,6 @@ nav{
       font-size: $x-sm-font-size;
     }
   }
-
-  @include flex-row;
- 
- 
-  justify-content: space-between;
-  align-items: center;
-  // width: 100%;
-
- 
- .nav-link {
-  @include list-horizontal;
-
-  
-
-  a{
-    &:link{
-      text-decoration: none;
-      color: $black-color;
-    }
-
-    &:hover{
-      text-decoration: underline;
-    }
-    
-    &:visited{
-      color: $black-color;
-    }
-
-  }
-} 
-  //breakpoints 
-//   @include breakpoint(mobile) {
-//    img {
-//      width: 145px;
-//      height: 46px;
-//    }
-//  }
-
- 
 }
  
 

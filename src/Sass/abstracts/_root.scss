@@ -26,7 +26,8 @@ $breakpoints: (
   desktop: 1240px,
   mobile: 375px,
 );
-$media-desktop: 1240px;
+$media-desktop-xl: 1440px;
+$media-desktop: 1024px;
 $media-mobile : 426px;
 
 //gap
@@ -59,7 +60,7 @@ $radius-25: 25px;
 $radius-50: 50%;
 
 //width
-$width-picture-desktop: 1240px;
+$width-picture-desktop: 1024px;
 $width-picture-mobile:335px;
 $card-desktop: 340px;
 $width-card-mobile: 335px;

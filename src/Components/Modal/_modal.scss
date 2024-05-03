@@ -1,0 +1,25 @@
+@use '../../Sass/abstracts' as *;
+.overlay{
+  background: rgba(0, 0, 0, 0.8);
+  top: 0; 
+  left: 0; 
+  position: fixed; 
+  width: 100%;
+  height: 100vh;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  button{
+    color: $white-color;
+    position: absolute;
+    font-size: 35px;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+
+ 
+  }
+}
+

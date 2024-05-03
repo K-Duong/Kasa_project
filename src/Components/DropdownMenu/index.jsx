@@ -31,7 +31,7 @@ function Dropdown({title, content, style }) {
           <img src={btnDropdown} alt="boutton dropdown"/>
         </Button>
       </div>
-      <div className= { openContent ? `dropdown-content dropdown-content-${style}` : `dropdown-content dropdown-content-${style} hide`}>
+      <div className= { openContent ? `dropdown-content dropdown-content-${style}` : `dropdown-content dropdown-content-${style} hidden`}>
       {typeof content === "object" ? <ContentList content={content}/> : <p>{content}</p>}
       </div>
     </div>

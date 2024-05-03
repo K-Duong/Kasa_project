@@ -25,9 +25,9 @@
 
 //media-query
 @mixin display-desktop{
-  max-width: root.$media-desktop;
-  // max-width: root.$breakpoints.desktop;
-  margin: root.$margin-auto
+max-width: root.$media-desktop;
+margin-left: auto;
+margin-right: auto;
   
 }
 @mixin display-mobile{

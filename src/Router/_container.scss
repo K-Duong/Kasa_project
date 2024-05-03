@@ -6,17 +6,15 @@ body {
 } 
 .container{
   @include flex-column;
-  @media screen and (max-width: $media-desktop) {
-     @include display-desktop;
-  }
-
-  @media screen and (max-width: $media-mobile) {
-    @include display-mobile;
- }
- 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $media-desktop;
   justify-content: center;
   align-items: center;
   margin-top: $padding-30;
   margin-bottom: $padding-30;
 
+  @media screen and (max-width: $media-mobile) {
+    @include display-mobile;
+ }
 }

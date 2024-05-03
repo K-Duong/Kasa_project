@@ -9,6 +9,7 @@ import PresentationPage from '../Pages/Presentation';
 
 import Nav from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import Modal from '../Components/Modal';
 
 
 
@@ -39,10 +40,12 @@ export const router = createBrowserRouter([
 
 function Root() {
   return (<>
+    {/* <Modal/> */}
     <Nav/>
     <div className='container'>
       <Outlet/>
     </div>
     <Footer/>
+    
   </>)
 };

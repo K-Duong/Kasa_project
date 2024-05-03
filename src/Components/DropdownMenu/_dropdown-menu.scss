@@ -59,8 +59,7 @@
 
 
     // hide content
-    &.hide{
-      // padding: 0;
+    &.hidden{
       max-height: 0;
     }
   }

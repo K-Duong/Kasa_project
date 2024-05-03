@@ -22,3 +22,21 @@
   }
 }
 
+@keyframes display-gallery {
+  from{
+    opacity: 0;
+  }
+  25%{
+    opacity: 15%;
+  }
+  50%{
+    opacity: 30%;
+  }
+  75%{
+    opacity: 70%;
+  }
+  100%{
+    opacity: 100%
+  }
+}
+

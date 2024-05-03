@@ -1,16 +1,21 @@
 @use '../../Sass/abstracts' as *;
 .gallery{
-  width: $width-picture-desktop;
+  width: 100%;
   height: $height-picture-desktop;
 
   @include flex-row;
+  justify-content: center;
   text-align: center;
 
   .picture-location{
+    width: 100%;
+    border-radius: $radius-25;
     img{
       height: $height-picture-desktop;
-      width: $width-picture-desktop;
+      width: 100%;
+      border-radius: $radius-25;
       object-fit: cover;
+      animation: display-gallery .5s forwards;
   
     }
   }
