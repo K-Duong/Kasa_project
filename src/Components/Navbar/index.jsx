@@ -1,5 +1,7 @@
-import { NavLink } from "react-router-dom"
-import logo from '../../Image/Logo.png'
+import { NavLink } from "react-router-dom";
+import logo from '../../Image/Logo.png';
+
+import './_nav.scss';
 
 function Nav(){
   return (

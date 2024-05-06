@@ -22,15 +22,12 @@ $md-text: 500;
 $light-text: 300;
 
 //breakpoints
-$breakpoints: (
-  desktop: 1240px,
-  mobile: 375px,
-);
 $media-desktop-xl: 1440px;
-$media-desktop: 1024px;
+$media-desktop: 1240px;
 $media-mobile : 426px;
 
 //gap
+$gap-35: 35px;
 $gap-50: 50px;
 $gap-27: 27px;
 $gap-38: 38px;
@@ -40,21 +37,28 @@ $gap-19: 19px;
 //padding
 $padding-5: 5px;
 $padding-10: 10px;
-
 $padding-15: 15px;
 $padding-20: 20px;
+$padding-25: 25px;
 $padding-30: 30px;
 $padding-35: 35px;
 $padding-50: 50px;
 $padding-100: 100px;
 
-
 //margin 
 $margin-auto: auto;
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-15: 15px;
+$margin-20: 20px;
+$margin-25: 25px;
+$margin-30: 30px;
+$margin-35: 35px;
+$margin-50: 50px;
+$margin-100: 100px;
 
 //radius
 $radius-5: 5px;
-
 $radius-10: 10px;
 $radius-25: 25px;
 $radius-50: 50%;

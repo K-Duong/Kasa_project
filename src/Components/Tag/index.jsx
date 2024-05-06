@@ -1,3 +1,4 @@
+import './_tag.scss'
 function Tag({tag}){
   return (
   <>

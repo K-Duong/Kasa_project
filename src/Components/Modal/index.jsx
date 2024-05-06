@@ -1,3 +1,5 @@
+import './_modal.scss';
+
 function Modal({children, handleCloseModal}) {
   return (
   <div className="overlay">

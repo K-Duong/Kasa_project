@@ -2,87 +2,110 @@
 
 .location-content{
   @include flex-column;
-  justify-content: center;
-  align-items: center;
+  @include center-children;
   width: 100%;
+  
+  h1, h2, h3{
+    margin: 0;
+  }
+  
+  h1,h3{
+    color: $primary-color;
+  }
+  h2,h3{
+    font-size: $sm-font-size;
+    font-weight: $md-text;
+  }
+  h1{
+    font-size: $l-font-size;
+    font-weight: $md-text;
+  }
 
   .location-body{
     @include flex-column;
     width: 100%;
     padding: $padding-30 0;
     row-gap: $padding-20;
-     
+
     .location-header{
-    @include flex-row;
-    width: 100%;
-    justify-content: space-between;
-    align-content: space-between;
-
-    .location-title-city{
-      line-height: $padding-20;
-    }
-
-    h1,h3{
-      color: $primary-color;
-    }
-
-    h2,h3{
-      font-size: $sm-font-size;
-      font-weight: $md-text;
-    }
-
-    h1{
-      font-size: $l-font-size;
-      font-weight: $md-text;
-    }
-    .location-host-info{
       @include flex-row;
-      height: 100%;
-      align-items: center;
-      column-gap: $gap-19;
-      
-      .host-name-box{
-        text-align: right;
-        max-width: 80px;
+      gap: 14px;
 
-       .host-name{
-          word-spacing: 30px;
-          line-height: 30px;
-        }
-      }
-      .host-profile{
-      border-radius: $radius-50;
-      width: 100px;
-      height: 100px;
+      .location-info{
+      @include flex-column;
+      width: 100%;
+      row-gap: 25px;
 
-        img{
-          border-radius: $radius-50;
-          object-fit: cover;
-          height: 100px;
+        .tags-list{
+          @include flex-row;
+          column-gap: $gap-19;
+
+          @media screen and (max-width:$media-mobile){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 25px;
+          }
         }
-      }
-    }
-  }
-  .tags-and-rating{
-    @include flex-row;
-    width: 100%;
-    justify-content: space-between;
+  
+      } 
+      .host-and-rating{
+        @include flex-column;
+        width: 100%;
+        align-items: end;
+        justify-content: space-between;
+
+        @media screen and (max-width:$media-mobile){
+          display: flex;
+          flex-direction: row-reverse;
+        }
+        
+       .host-info{
+          @include flex-row;
+          height: 100%;
+          align-items: start;
+          column-gap: $gap-19;
+          
+          .host-name-container{
+            text-align: right;
+            max-width: 80px;
     
-    .tags-list{
+           .host-name{
+              word-spacing: 30px;
+              line-height: 30px;
+            }
+          }
+          .host-profile{
+            border-radius: $radius-50;
+            width: 64px;
+            height: 64px;
+    
+            img{
+              @include cover-img;
+              border-radius: $radius-50;
+              height: 64px;
+            }
+          }
+        }
+        .rating{
+          @include flex-row;
+        }
+      }
+      @media screen and (max-width:$media-mobile){
+        @include flex-column;
+      }
+    }
+  
+    .location-details{
       @include flex-row;
+      justify-content: space-between;
       column-gap: $gap-19;
-    }
 
-    .rating{
-      @include flex-row;
-
+      @media screen and (max-width:$media-mobile){
+        @include flex-column;
+        gap: 25px;
+      }
     }
-  }
-  .location-details{
-    @include flex-row;
-    justify-content: space-between;
-    column-gap: $gap-19;
-  }
  }
 
  

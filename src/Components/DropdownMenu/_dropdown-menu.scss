@@ -1,8 +1,12 @@
 @use '../../Sass/abstracts' as *;
-.dropdown {
 
+.dropdown {
   &-location{
     width: 582px;
+  }
+
+  @media screen and (max-width: $media-mobile) {
+    width: 100%;
   }
 
   &-title{
@@ -21,18 +25,16 @@
     &-presentation{
       font-size: $md-font-size;
     }
-
-
   }
+
   &-content{
     overflow: hidden;
     height: auto;
-    // padding: $padding-10;
-    max-height: 500px; /* approximate max height */
+    max-height: 500px; 
     box-sizing: border-box;
     
     transition-property: all;
-  transition-duration: .4s;
+    transition-duration: .4s;
     transition-timing-function: ease-in-out;
     
     &-location{
@@ -40,6 +42,7 @@
 
       ul {
         padding-left: $padding-20;
+        
         li{
          list-style-type: none;
          line-height: 24px;

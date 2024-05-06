@@ -1,6 +1,8 @@
 import starActive from '../../Image/star-active.png';
 import starInactive from '../../Image/star-inactive.png';
 
+import './_rating.scss'
+
 function Rating({rating}){
   const newRating = Math.floor(rating)
   const maxRate = 5;

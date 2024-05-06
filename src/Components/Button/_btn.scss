@@ -2,7 +2,6 @@
 
 button {
   background-color: transparent;
-  // opacity: 50%;
   border: none;
 
   &.btn-gallery{
@@ -29,12 +28,12 @@ button {
     cursor: pointer;
     animation: rotate-vector-up 0.2s ease-in forwards;
 
-      //animation for opened content
-      &-opened{
-        img{
-                animation: rotate-vector-down 0.2s ease-in forwards;
-              }
+    //animation for opened content
+    &-opened{
+      img{
+        animation: rotate-vector-down 0.2s ease-in forwards;
       }
+    }
 
      
 

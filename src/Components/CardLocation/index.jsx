@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import './_card-location.scss';
 
 function Card ({location, handleClick}){
-const url=`/location/:${location.id}`
+const url=`/location/${location.id}`
  return (
   <>
   <Link to={url}>

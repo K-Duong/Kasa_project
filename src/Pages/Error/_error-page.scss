@@ -3,8 +3,7 @@
 
 .error-content{
   @include flex-column;
-  justify-content: center;
-  align-items: center;
+  @include center-children;
  
 
   span.error-status{

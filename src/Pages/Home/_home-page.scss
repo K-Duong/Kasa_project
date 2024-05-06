@@ -4,14 +4,13 @@
 
 .cards-content{
   @include flex-wrap;
-  align-items: center;
-  justify-content: center;
+  @include center-children;
   
   background-color: $bg-color;
   
-  margin-top: $padding-50;
+  margin-top: $margin-50;
   padding: $padding-50 0;
-  gap: $padding-35;
+  gap: $gap-35;
   
   border-radius: $radius-25;
 

@@ -10,6 +10,7 @@
 
 @mixin flex-row{
   display: flex;
+  flex-direction: row;
 }
 
 @mixin flex-wrap{
@@ -32,21 +33,10 @@ margin-right: auto;
 }
 @mixin display-mobile{
   max-width: root.$media-mobile;
+  margin-left: auto;
+  margin-right: auto;
+  padding: root.$padding-15;
 
-}
-
-// @mixin display-mq($key){
-//   $size: map.get($breakpoints,$key);
-
-//   max-width: $size;
-//   margin: root.$margin-auto;
-// };
-
-@mixin breakpoint($key) {
-  $size: map.get($breakpoints,$key);
-  @media screen and (max-width: $size) {
-    @content;
-  }
 }
 
 //positions
@@ -55,6 +45,11 @@ margin-right: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin center-children{
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin bottom-left{

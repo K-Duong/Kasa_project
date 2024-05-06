@@ -1,7 +1,10 @@
 import { presentationData } from '../../Data/presentationData.js';
+
 import Dropdown from '../../Components/DropdownMenu/index.jsx';
 import Banner from '../../Components/Banner/index.jsx';
 import cover from '../../Image/photo-cover2.jpeg';
+
+import './_presentation-page.scss'
 
 
 

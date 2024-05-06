@@ -8,16 +8,14 @@
   background-color: black;
   border-radius: $radius-25;
 
-  // img banner
   & img{
+    @include cover-img;
     height: 230px;
     width: 100%;
-    object-fit: cover;
     border-radius: $radius-25;
 
   }
 
-  // home page's banner
   &.banner-home{
     position: relative;
     img{

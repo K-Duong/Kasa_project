@@ -3,6 +3,8 @@ import { Link, useRouteError } from "react-router-dom"
 import Nav from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 
+import './_error-page.scss'
+
 function ErrorPage() {
   const error = useRouteError();
   console.log(error)

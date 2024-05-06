@@ -28,13 +28,13 @@ nav{
 } 
   @media screen and (max-width: $media-mobile) {
     @include display-mobile;
-    padding: $padding-15;
     img {
       width: 145px;
       height: 46px;
     }
     .nav-link {
       font-size: $x-sm-font-size;
+      text-transform: uppercase;
     }
   }
 }

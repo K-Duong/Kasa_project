@@ -1,12 +1,7 @@
 import { useState } from "react";
 import Button from '../Button';
 import btnDropdown from '../../Image/vector-up.png';
-
-// Collapse : Par défaut, les Collapses sont fermés à l'initialisation de la page.
-
-// Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.
-
-// Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
+import './_dropdown-menu.scss'
 
 function Dropdown({title, content, style }) {
   const [openContent, setOpenContent] = useState(false);
