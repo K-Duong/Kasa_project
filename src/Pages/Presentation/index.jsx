@@ -13,7 +13,7 @@ function PresentationPage() {
   return (
     <div className="presentation-content">
       <Banner cover={cover} />
-      {presentationData.map(data => <Dropdown title={data.title} content={data.content} style={'presentation'} />)}
+      {presentationData.map(data => <Dropdown key={data.title} title={data.title} content={data.content} style={'presentation'} />)}
     </div>
   )
 }
