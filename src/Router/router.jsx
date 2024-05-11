@@ -35,7 +35,6 @@ export const router = createBrowserRouter([
       }
     ]
   },
-  
 ]);
 
 function Root() {

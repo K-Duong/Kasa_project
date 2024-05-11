@@ -6,8 +6,6 @@ import cover from '../../Image/photo-cover2.jpeg';
 
 import './_presentation-page.scss'
 
-
-
 function PresentationPage() {
 
   return (

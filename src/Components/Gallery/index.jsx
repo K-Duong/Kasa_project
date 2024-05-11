@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import Button from "../Button";
-import Modal from "../Modal";
 
 import btnPrev from "../../Image/vector-left.png";
 import btnNext from "../../Image/vector-right.png";
@@ -10,7 +9,6 @@ import './_gallery.scss'
 
 function Gallery({ gallery }) {
   const [id, setId] = useState(0);
-  const [openModal, setOpenModal] = useState(false);
   const [widthDevice, setWidthDevice] = useState(window.innerWidth);
   
   useEffect(()=>{
@@ -32,7 +30,7 @@ function Gallery({ gallery }) {
 
   function Picture({ children }) {
     return (
-      <div className="picture-location" onClick={handleOpenModal}>
+      <div className="picture-location">
         {children}
       </div>
     );
@@ -57,9 +55,6 @@ function Gallery({ gallery }) {
       setId((prev) => prev + 1);
     }
   }
-  function handleOpenModal() {
-    setOpenModal(!openModal);
-  }
 
   ///components 
   function MultiplePictures() {
@@ -69,9 +64,9 @@ function Gallery({ gallery }) {
           type={"btn-gallery btn-gallery-prev"}
           handleClick={() => handlePreviousPicture(gallery)}
         >
-          <img src={btnPrev} alt={"précédent"} />
+          <img src={btnPrev} alt={"phto précédente"} />
         </Button>
-        <Picture onClick={handleOpenModal}>
+        <Picture>
           <DisplayImg src={gallery[id]} />
         </Picture>
         {widthDevice > 426 && <Counter/>}
@@ -79,14 +74,14 @@ function Gallery({ gallery }) {
           type={"btn-gallery btn-gallery-next"}
           handleClick={() => handleNextPicture(gallery)}
         >
-          <img src={btnNext} alt={"suivant"} />
+          <img src={btnNext} alt={"phoro suivante"} />
         </Button>
       </>
     );
   }
   function SinglePicture() {
     return (
-      <Picture onClick={handleOpenModal}>
+      <Picture>
         <DisplayImg src={gallery[id]} />
       </Picture>
     );
@@ -97,12 +92,6 @@ function Gallery({ gallery }) {
       <div className="gallery">
         {gallery.length === 1 ? <SinglePicture /> : <MultiplePictures />}
       </div>
-      {openModal && (
-        <Modal handleCloseModal={() => setOpenModal(false)}>
-          <DisplayImg src={gallery[id]} />
-        </Modal>
-      )}
-      ,
     </>
   );
 }

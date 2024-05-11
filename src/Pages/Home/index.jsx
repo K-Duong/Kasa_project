@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import Banner from '../../Components/Banner';
 import Card from '../../Components/CardLocation';
 import cover from '../../Image/photo-source.jpeg';
@@ -5,11 +7,8 @@ import cover from '../../Image/photo-source.jpeg';
 import { json } from '../../Data/json';
 import "./_home-page.scss";
 
+
 function HomePage() {
-  console.log(json);
-
-  //TODO: useState, useEffect
-
   return (
     <div className="home-content">
       <Banner cover={cover} style={'home'}>
