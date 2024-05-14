@@ -38,7 +38,6 @@ function Rating({rating}){
     <>
       {startsActive}
       {startsInactive}
-
     </>
    
   )

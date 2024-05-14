@@ -13,7 +13,6 @@ function LocationPage() {
   //data of location
   const {id} = useParams();
 
-  //TODO: array.find
   const data = json.find((el) => el.id === id);
   console.log(data)
 
@@ -54,7 +53,6 @@ function LocationPage() {
           </div>
           
           <div className="location-details">
-            {/* map dropdown with description and equipement */}
             <Dropdown title={'Description'} content={data.description} style={"location"}/>
             <Dropdown title={"Equipements"} content={data.equipments} style={"location"}/>
           </div>
