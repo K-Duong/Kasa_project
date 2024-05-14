@@ -5,11 +5,7 @@ Kasa est le projet 11 dans le cadre de la formation "Développeur d'applicaiton 
 ## Prérequis :
 Pour un bon déroulement, le projet nécessite  :
 - Node JS version 18.16.1
-- React version 18.2.0
-- React-DOM version 18.2.0
-- React-router-dom version 6.23.0
 - Vite version 5.2.0
-- Sass version 1.75.0
 
 ## Installation : 
 Clonez le projet :
